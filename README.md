@@ -4,6 +4,13 @@ This is useful for anyone that doesn't know what to read next. If you have GoodR
 ## How it works
 The only input is the user-id and the name of the book shelf to randomly select from.
 
+## If you don't have scala...
+The easiest way to install it is with homebrew. [Or check out other ways to download on the scala website.](https://www.scala-lang.org/download/)
+```
+brew update
+brew install scala
+```
+
 ## Compiling
 From the terminal run
 ``` 
