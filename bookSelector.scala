@@ -42,8 +42,9 @@ object bookSelector extends App {
   }
 
   // prompts for arguments to call
-  val userId = scala.io.StdIn.readLine("What is your user id? \n (You can find it by going to your profile & looking at web address. \n For example the id for this user profile is 4333445: \n https://www.goodreads.com/user/show/4333445-arielle) \n\n")
-  val bookShelf = scala.io.StdIn.readLine("What bookshelf do you want to randomly select from? ('to-read' is a common one) \n This can take up to 30 seconds. The API is quite slow. \n\n")
+  println("\n NOTE: When answering prompts, do not use any quotations.")
+  val userId = scala.io.StdIn.readLine("\n 1) What is your user id? \n (You can find it by going to your profile & looking at web address.) \n For example the id for this user profile is 4333445: \n https://www.goodreads.com/user/show/4333445-arielle \n")
+  val bookShelf = scala.io.StdIn.readLine("\n 2) What bookshelf do you want to randomly select from? (to-read is a common one) \n Note: This can take up to 30 seconds. The API is quite slow. \n")
   
   // main
   val callPiece1 = buildCall_Piece1(userId, bookShelf)
@@ -51,6 +52,6 @@ object bookSelector extends App {
   val call = buildCall(callPiece1, totalBooksInShelf)
   val selection = chooseBook(call, totalBooksInShelf)
 
-  println(selection)
+  println("\n" ++ selection ++ "\n")
 
 }
