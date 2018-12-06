@@ -7,7 +7,7 @@ The only input is the user-id and the name of the book self to randomly select f
 ## Compiling
 From the terminal run
 ``` 
-scalac GoodReadsBookSelector/bookSelector.scala
+scalac GoodReads-BookSelector/bookSelector.scala
 ```
 
 ## Running
