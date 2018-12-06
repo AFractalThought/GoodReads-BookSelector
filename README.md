@@ -15,6 +15,7 @@ From terminal run:
 ```` 
 scala bookSelector 
 ``` 
+
 And respond to prompts:
 1) a user-id, which can be a user-id from any GoodReads user. To get a user-id, simply go to your profile, or another person's profile and the id will be in the web address. 
 For example, the address of my profile is: https://www.goodreads.com/user/show/4333445-arielle and my user-id is 4333445.
