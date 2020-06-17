@@ -4,7 +4,7 @@ object bookSelector extends App {
   import scala.util.Random
 
   val queryStart = "https://www.goodreads.com/review/list/" 
-  val key = "Plt3iqOPsprkANSAmD6mWw"
+  val key = "yourkeyhere"
 
   // this call is used to get number of books from bookshelf and for the final call
   def buildCall_Piece1(id: String, shelf: String): String = {
